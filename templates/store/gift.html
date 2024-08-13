@@ -1,0 +1,60 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+
+    <title>Gift Cards | e-Commerce</title>
+    <link rel="stylesheet" href="{% static 'css/gift_style.css' %}">
+
+    <main>
+        <section class="gift-cards">
+            <h1>Gift Cards</h1>
+            <p>The Perfect Gift for Any Occasion!</p>
+            <p>Looking for the perfect gift but not sure what to get? Give them the gift of choice with our e-Commerce Gift Cards. Available in various denominations, our gift cards are a convenient and thoughtful way to let your loved ones choose what they truly want.</p>
+            
+            <h2>How It Works</h2>
+            <ol>
+                <li><strong>Choose a Denomination:</strong> Select the amount you wish to gift. Our gift cards are available in $25, $50, $100, $150, $200, and $500.</li>
+                <li><strong>Add to Cart:</strong> Add the gift card to your cart just like any other product.</li>
+                <li><strong>Checkout:</strong> Complete the checkout process. You can choose to send the gift card to your email or directly to the recipient's email.</li>
+                <li><strong>Redeem:</strong> The recipient can use the gift card code during checkout to apply the balance towards their purchase.</li>
+            </ol>
+            
+            <h2>Gift Card Options</h2>
+            <ul>
+                <li><strong>e-Gift Cards:</strong> Delivered instantly via email. Perfect for last-minute gifts!</li>
+                <li><strong>Physical Gift Cards:</strong> Shipped to your address or directly to the recipient. Ideal for special occasions.</li>
+            </ul>
+            
+            <h2>Why Choose Our Gift Cards?</h2>
+            <ul>
+                <li><strong>Flexible and Convenient:</strong> No expiration date. Can be used for any product on our website.</li>
+                <li><strong>Easy to Redeem:</strong> Enter the unique code at checkout to apply the gift card balance.</li>
+                <li><strong>Secure:</strong> Your purchase and the recipient’s details are safe and secure.</li>
+            </ul>
+            
+            <h2>Terms and Conditions</h2>
+            <ul>
+                <li>Gift cards are non-refundable and cannot be exchanged for cash.</li>
+                <li>Lost or stolen gift cards cannot be replaced.</li>
+                <li>Gift cards can be used in conjunction with other promotions and discounts.</li>
+            </ul>
+            
+            <h2>Frequently Asked Questions</h2>
+            <p><strong>Q: How do I purchase a gift card?</strong><br>
+            A: Simply select the desired amount, add it to your cart, and proceed to checkout.</p>
+            
+            <p><strong>Q: How will the recipient receive the gift card?</strong><br>
+            A: You can choose to have the gift card delivered via email or opt for a physical card to be shipped.</p>
+            
+            <p><strong>Q: Can I use more than one gift card on a purchase?</strong><br>
+            A: Yes, multiple gift cards can be used for a single purchase.</p>
+            
+            <p><strong>Q: Do gift cards expire?</strong><br>
+            A: No, our gift cards do not have an expiration date.</p>
+            
+            <p>If you have any further questions, feel free to <a href="{% url 'contact_us' %}">contact our customer support team</a>.</p>
+        </section>
+    </main>
+
+
+{% endblock content %}

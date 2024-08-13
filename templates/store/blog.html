@@ -1,0 +1,32 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+
+    <title>Blog - e-Commerce</title>
+    <link rel="stylesheet" href="{% static 'css/blog_style.css' %}">
+    <style>
+        .container{
+            border: 2px solid rgb(142, 141, 141);
+            border-radius: 10px;
+            padding: 50px;
+            margin-top: 50px;
+        }
+    </style>
+
+    <div class="container">
+        <h2>e-Commerce Blog</h2>
+        <div class="blog-post">
+            <h3>Top 10 Tips for Online Shopping</h3>
+            <p>Date: August 1, 2024</p>
+            <p>Online shopping can be convenient and fun if you know how to make the most of it. Here are our top 10 tips to enhance your online shopping experience...</p>
+            <button>Read More</button>
+        </div>
+        <div class="blog-post">
+            <h3>The Future of E-Commerce: Trends to Watch</h3>
+            <p>Date: July 25, 2024</p>
+            <p>As the e-commerce industry continues to evolve, there are several key trends that we believe will shape the future of online shopping...</p>
+            <button>Read More</button>
+        </div>
+    </div>
+
+{% endblock content %}

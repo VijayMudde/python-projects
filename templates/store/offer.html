@@ -1,0 +1,34 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+
+    <title>Special Offers - e-Commerce</title>
+    <link rel="stylesheet" href="{% static 'css/offer_style.css' %}">
+
+    <div class="container special-offers">
+        <h2>Special Offers</h2>
+        <div class="offers-list">
+            <div class="offer-item">
+                <h3>50% Off Headphones</h3>
+                <p>Get 50% off on all headphones. Limited time offer!</p>
+                <button class="btn btn-primary">Shop Now</button>
+            </div>
+            <div class="offer-item">
+                <h3>Buy One Get One Free on Books</h3>
+                <p>Purchase any book and get another one free. Don't miss out!</p>
+                <button class="btn btn-primary">Shop Now</button>
+            </div>
+            <div class="offer-item">
+                <h3>20% Off Cameras</h3>
+                <p>Save 20% on all cameras. Hurry, offer ends soon!</p>
+                <button class="btn btn-primary">Shop Now</button>
+            </div>
+            <div class="offer-item">
+                <h3>Free Shipping on Orders Over 1000</h3>
+                <p>Enjoy free shipping on all orders over 1000. Shop more, save more!</p>
+                <button class="btn btn-primary">Shop Now</button>
+            </div>
+        </div>
+    </div>
+
+{% endblock content %}

@@ -1,0 +1,36 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+
+
+{% block content %}
+<style>
+    .container{
+        border: 2px solid rgb(142, 141, 141);
+        border-radius: 10px;
+        padding: 50px;
+        margin: 100px auto;
+    
+    }
+</style>
+
+<div class="container mt-5">
+    <h2>Order History</h2>
+    <hr>
+    {% if orders %}
+        <div class="list-group">
+            {% for order in orders %}
+            <a href="#" class="list-group-item list-group-item-action">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1">Order #{{ order.id }}</h5>
+                    <small>{{ order.date_ordered }}</small>
+                </div>
+                <p class="mb-1">Total: ₹ {{ order.get_cart_total }}</p>
+                <small>Status: Ordered</small>
+            </a>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>You have no orders.</p>
+    {% endif %}
+</div>
+{% endblock %}

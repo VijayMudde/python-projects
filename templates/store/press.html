@@ -1,0 +1,33 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+
+    <title>Press - e-Commerce</title>
+    <link rel="stylesheet" href="{% static 'css/press_style.css' %}">
+    <style>
+        .container{
+            border: 2px solid rgb(142, 141, 141);
+            border-radius: 10px;
+            padding: 50px;
+            margin-top: 50px;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Press Releases</h2>
+        <div class="press-release">
+            <h3>e-Commerce Launches New Product Line</h3>
+            <p>Date: August 1, 2024</p>
+            <p>e-Commerce is excited to announce the launch of our new product line, featuring innovative and high-quality items designed to meet the needs of our customers...</p>
+            <button>Read More</button>
+        </div>
+        <div class="press-release">
+            <h3>e-Commerce Partners with Leading Brands</h3>
+            <p>Date: July 15, 2024</p>
+            <p>We are proud to announce our new partnerships with several leading brands, bringing a wider selection of products to our customers...</p>
+            <button>Read More</button>
+        </div>
+
+    </div>
+
+{% endblock content %}

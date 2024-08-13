@@ -1,0 +1,91 @@
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+.about-us .mission-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us .mission-values li {
+    margin-bottom: 10px;
+}
+
+.about-us .mission-values li strong {
+    color: #4f868c;
+}
+
+.order-tracking .tracking-form, .returns .returns-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-tracking .tracking-form label, .returns .returns-form label {
+    margin-top: 10px;
+}
+
+.order-tracking .tracking-form input, .returns .returns-form input, .returns .returns-form textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.order-tracking .tracking-form button, .returns .returns-form button {
+    align-self: center;
+    width: 150px;
+}

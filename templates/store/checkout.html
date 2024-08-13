@@ -1,0 +1,79 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+    <div class="col-lg-6">
+        <div class="box-element" id="form-wrapper">
+            <form id="form" action="{% url 'order' %}" method="post">
+                {% csrf_token %}
+                <div id="user-info">Details<br>
+                    <div class="form-field">
+                        <input required class="form-control" type="text" name="name" placeholder="Name.." autocomplete="name">
+                    </div>
+                    <div class="form-field">
+                        <input required class="form-control" type="email" name="email" placeholder="Email.." autocomplete="email">
+                    </div>
+                </div>
+
+                <div id="shipping-info">
+                    <hr>
+                    <p>Shipping Information:</p>
+                    <hr>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="street" placeholder="street.." autocomplete="street-address">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="city" placeholder="City.." autocomplete="address-level2">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="state" placeholder="State.." autocomplete="address-level1">
+                    </div>
+                    <div class="form-field">
+                        <input class="form-control" type="text" name="pincode" placeholder="Pin code.." autocomplete="postal-code">
+                    </div>
+                </div>
+
+                <hr>
+                <div class="form-field">
+                    <label for="payment-method">Payment Method:</label>
+                    <select id="payment-method" class="form-control" name="payment_method">
+                        <option value="cod">Cash on Delivery</option>
+                    </select>
+                </div>
+                <hr>
+                <input id="form-button" class="btn btn-primary btn-block" type="submit" value="Place Order">
+            </form>
+        </div>
+
+        <br>
+
+    </div>
+
+    <div class="col-lg-6">
+        <div class="box-element">
+            <a class="btn btn-outline-dark" href="{% url 'cart' %}">&#x2190; Back to Cart</a>
+            <hr>
+            <h3>Order Summary</h3>
+            <hr>
+            {% for item in items %}
+            <div class="cart-row">
+                <div style="flex:2"><img class="row-image" src="{{ item.product.imageURL }}"></div>
+                <div style="flex:2"><p>{{ item.product.name }}</p></div>
+                <div style="flex:1"><p>₹ {{ item.product.price_in_rupees}}</p></div>
+                <div style="flex:1"><p>x{{ item.quantity }}</p></div>
+            </div>
+            {% endfor %}
+            <h5>Items: {{ order.get_cart_items }}</h5>
+            <h5>Total: ₹ {{ order.get_cart_total|floatformat:2 }}</h5>
+        </div>
+    </div>
+</div>
+
+<script> 
+    const btn = document.getElementById('form-button');
+    btn.addEventListener('click', () => {
+        alert("Order placed successfully!!");
+    });
+</script>
+
+{% endblock content %}

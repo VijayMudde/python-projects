@@ -1,0 +1,30 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+
+    <title>Returns - e-Commerce</title>
+    <link rel="stylesheet" href="{% static 'css/returns_style.css' %}">
+
+    <div class="container returns">
+        <h2>Returns</h2>
+        <p>If you are not satisfied with your purchase, you can return it within 30 days of delivery for a full refund. Please follow the instructions below to initiate a return:</p>
+        <ol>
+            <li>Fill out the return form with your order details.</li>
+            <li>Print the return label and attach it to the package.</li>
+            <li>Drop off the package at your nearest shipping center.</li>
+        </ol>
+        <form action="/return_order" method="post" class="returns-form">
+            <label for="order-id">Order ID</label>
+            <input type="text" id="order-id" name="order_id" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="reason">Reason for Return</label>
+            <textarea id="reason" name="reason" required></textarea>
+            
+            <button type="submit">Submit Return</button>
+        </form>
+    </div>
+
+{% endblock content %}

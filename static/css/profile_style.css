@@ -1,0 +1,111 @@
+/* General styling */
+body {
+    font-family: 'Glory', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+/* Profile Sidebar */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-body img {
+    border: 2px solid #6c757d;
+}
+
+.card-body h4 {
+    margin-top: 10px;
+}
+
+.card-body p {
+    color: #6c757d;
+}
+
+.list-group-item.active {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.list-group-item-action:hover {
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+/* Profile Form */
+.form-group label {
+    font-weight: bold;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+.btn-primary:hover {
+    background-color: #495057;
+    border-color: #495057;
+}
+
+/* Footer */
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    border-bottom: 2px solid #6c757d;
+    padding-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 10px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #212529;
+    color: #6c757d;
+}

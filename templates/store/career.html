@@ -1,0 +1,37 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+
+    <title>Career - e-Commerce</title>
+    <link rel="stylesheet" href="{% static 'css/career_style.css' %}">
+    <style>
+        .container{
+            border: 2px solid rgb(142, 141, 141);
+            border-radius: 10px;
+            padding: 50px;
+            margin-top: 50px;
+        }
+    </style>
+
+    <div class="container">
+        <h2>Careers at e-Commerce</h2>
+        <p>Join our dynamic team and help us shape the future of e-commerce. We offer exciting career opportunities in various fields.</p>
+        
+        <h3>Current Openings</h3>
+        <div class="job-listing">
+            <h4>Software Engineer</h4>
+            <p>Location: New York, NY</p>
+            <p>Job Type: Full-time</p>
+            <p>Description: We are looking for a skilled Software Engineer to join our team. You will be responsible for developing high-quality applications...</p>
+            <button>Apply Now</button>
+        </div>
+        <div class="job-listing">
+            <h4>Product Manager</h4>
+            <p>Location: San Francisco, CA</p>
+            <p>Job Type: Full-time</p>
+            <p>Description: As a Product Manager, you will lead the development of new products and features, ensuring they align with our strategic goals...</p>
+            <button>Apply Now</button>
+        </div>
+    </div>
+
+{% endblock content %}

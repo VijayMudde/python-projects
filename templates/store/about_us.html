@@ -1,0 +1,29 @@
+{% extends 'store/navbar.html' %}
+{% load static %}
+{% block content %}
+
+    <title>About Us - e-Commerce</title>
+    <link rel="stylesheet" href="{% static 'css/about_style.css' %}">
+
+    <div class="container about-us">
+        <h2>About Us</h2>
+        <p>Welcome to our e-Commerce site! We are committed to providing you with the best products and services.</p>
+        <p>Our journey began in [Year] with a simple goal: to make shopping easier and more enjoyable for everyone. Since then, we have grown and evolved, but our mission remains the same. We strive to offer a wide variety of products at competitive prices, backed by excellent customer service.</p>
+        <p>Thank you for choosing us for your shopping needs. We look forward to serving you!</p>
+
+        <div class="mission-values">
+            <h3>Our Mission</h3>
+            <p>To provide the highest quality products at the most competitive prices, while delivering unparalleled customer service.</p>
+            
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Customer First:</strong> We prioritize the needs and satisfaction of our customers above all else.</li>
+                <li><strong>Integrity:</strong> We conduct our business with honesty and transparency.</li>
+                <li><strong>Innovation:</strong> We constantly seek new ways to improve and innovate our products and services.</li>
+                <li><strong>Community:</strong> We believe in giving back to the community and supporting various social causes.</li>
+                <li><strong>Quality:</strong> We are committed to maintaining the highest standards of quality in everything we do.</li>
+            </ul>
+        </div>
+    </div>
+
+{% endblock content %}

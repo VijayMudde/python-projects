@@ -1,0 +1,124 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Text Styles */
+p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ol {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+/* About Us Styles */
+.about-us .mission-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us .mission-values li {
+    margin-bottom: 10px;
+}
+
+.about-us .mission-values li strong {
+    color: #4f868c;
+}
+
+/* Order Tracking & Returns Styles */
+.order-tracking .tracking-form, .returns .returns-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.order-tracking .tracking-form label, .returns .returns-form label {
+    margin-top: 10px;
+}
+
+.order-tracking .tracking-form input, .returns .returns-form input, .returns .returns-form textarea {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.order-tracking .tracking-form button, .returns .returns-form button {
+    align-self: center;
+    width: 150px;
+}
+
+/* Special Offers Styles */
+.special-offers .offers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.special-offers .offer-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.special-offers .offer-item h3 {
+    margin-top: 0;
+}
+
+.special-offers .offer-item button {
+    margin-top: 10px;
+}
