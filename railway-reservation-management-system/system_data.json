@@ -1,0 +1,233 @@
+{
+    "trains": [
+        {
+            "train_id": 1,
+            "name": "Circar Express",
+            "origin": "Kakinada Port",
+            "destination": "Tambaram",
+            "day_of_week": "Monday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 100,
+                    "fare": 500
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 49,
+                    "fare": 1000
+                }
+            ]
+        },
+        {
+            "train_id": 1,
+            "name": "Circar Express",
+            "origin": "Kakinada Port",
+            "destination": "Tambaram",
+            "day_of_week": "Friday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 100,
+                    "fare": 500
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 50,
+                    "fare": 1000
+                }
+            ]
+        },
+        {
+            "train_id": 2,
+            "name": "BIDAR MACHILIPATNAM SUPERFAST EXPRESS",
+            "origin": "BIDAR",
+            "destination": "MACHILIPATNAM",
+            "day_of_week": "Tuesday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 100,
+                    "fare": 500
+                },
+                {
+                    "coach_type": "1A",
+                    "available_seats": 70,
+                    "fare": 600
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 50,
+                    "fare": 1000
+                }
+            ]
+        },
+        {
+            "train_id": 3,
+            "name": "Vijayawada-Chennai Express",
+            "origin": "Vijayawada",
+            "destination": "Chennai",
+            "day_of_week": "Wednesday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 120,
+                    "fare": 550
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 60,
+                    "fare": 1100
+                }
+            ]
+        },
+        {
+            "train_id": 4,
+            "name": "Chennai-Coimbatore Express",
+            "origin": "Chennai",
+            "destination": "Coimbatore",
+            "day_of_week": "Thursday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 130,
+                    "fare": 600
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 70,
+                    "fare": 1200
+                }
+            ]
+        },
+        {
+            "train_id": 5,
+            "name": "Hyderabad-Vijayawada Express",
+            "origin": "Hyderabad",
+            "destination": "Vijayawada",
+            "day_of_week": "Friday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 150,
+                    "fare": 500
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 75,
+                    "fare": 1000
+                }
+            ]
+        },
+        {
+            "train_id": 6,
+            "name": "Hyderabad-Vizag Express",
+            "origin": "Hyderabad",
+            "destination": "Vizag",
+            "day_of_week": "Saturday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 140,
+                    "fare": 700
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 70,
+                    "fare": 1400
+                }
+            ]
+        },
+        {
+            "train_id": 7,
+            "name": "Kakinada-Nellore Express",
+            "origin": "Kakinada",
+            "destination": "Nellore",
+            "day_of_week": "Sunday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 110,
+                    "fare": 450
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 55,
+                    "fare": 900
+                }
+            ]
+        },
+        {
+            "train_id": 8,
+            "name": "Vizag-Vijayawada Express",
+            "origin": "Vizag",
+            "destination": "Vijayawada",
+            "day_of_week": "Monday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 120,
+                    "fare": 600
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 60,
+                    "fare": 1200
+                }
+            ]
+        },
+        {
+            "train_id": 9,
+            "name": "Tirupati-Vijayawada Express",
+            "origin": "Tirupati",
+            "destination": "Vijayawada",
+            "day_of_week": "Tuesday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 130,
+                    "fare": 500
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 65,
+                    "fare": 1000
+                }
+            ]
+        },
+        {
+            "train_id": 10,
+            "name": "Guntur-Vizag Express",
+            "origin": "Guntur",
+            "destination": "Vizag",
+            "day_of_week": "Wednesday",
+            "coaches": [
+                {
+                    "coach_type": "Sleeper",
+                    "available_seats": 115,
+                    "fare": 550
+                },
+                {
+                    "coach_type": "AC",
+                    "available_seats": 57,
+                    "fare": 1100
+                }
+            ]
+        }
+    ],
+    "users": [
+        {
+            "user_id": 1,
+            "username": "vijay",
+            "password": "7070",
+            "bookings": [
+                {
+                    "pnr": 1,
+                    "train_id": 1,
+                    "coach_type": "AC"
+                }
+            ]
+        }
+    ],
+    "next_pnr": 2
+}
